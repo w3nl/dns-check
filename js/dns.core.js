@@ -7,6 +7,7 @@
  */
 var dns = require('dns');
 var vorpal = require('vorpal')();
+var servers = require('../servers.json');
 
 var DnsCheck = function(domain) {
     'use strict';
@@ -22,6 +23,7 @@ var DnsCheck = function(domain) {
                     console.log('reverse for ' + a + ' failed: ' + err.message);
                 } else {
                     console.log('reverse for ' + a + ': ' + JSON.stringify(domains));
+                    console.log('server: ' + servers[a]);
                 }
             });
         });
