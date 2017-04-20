@@ -1,6 +1,6 @@
 {
     "name": "dns-check",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Check the dns",
     "files": [
         "js/dns.core.js"
@@ -30,5 +30,8 @@
     },
     "bin": {
         "gulp": "./js/dns.core.js"
+    },
+    "engines": {
+        "node": ">= 0.9"
     }
 }
