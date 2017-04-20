@@ -1,34 +1,34 @@
 {
-  "name": "dns-check",
-  "version": "0.0.6",
-  "description": "Check the dns",
-  "files": [
-    "js/dns.core.js"
-  ],
-  "main": "js/dns.core.js",
-  "scripts": {
-    "start": "node js/dns.core.js",
-    "build": "npm install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Way2WebPieter/dns-check.git"
-  },
-  "keywords": [
-    "dns",
-    "javascript"
-  ],
-  "author": "Pieter Wigboldus",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/Way2WebPieter/dns-check/issues"
-  },
-  "homepage": "https://github.com/Way2WebPieter/dns-check#readme",
-  "dependencies": {
-    "native-dns": "0.7.0",
-    "vorpal": "1.12.0"
-},
-  "bin": {
-    "gulp": "./js/dns.core.js"
-  },
+    "name": "dns-check",
+    "version": "0.0.7",
+    "description": "Check the dns",
+    "files": [
+        "js/dns.core.js"
+    ],
+    "main": "js/dns.core.js",
+    "scripts": {
+        "start": "node js/dns.core.js",
+        "build": "npm install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Way2WebPieter/dns-check.git"
+    },
+    "keywords": [
+        "dns",
+        "javascript"
+    ],
+    "author": "Pieter Wigboldus",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/Way2WebPieter/dns-check/issues"
+    },
+    "homepage": "https://github.com/Way2WebPieter/dns-check#readme",
+    "dependencies": {
+        "native-dns": "0.7.0",
+        "vorpal": "1.12.0"
+    },
+    "bin": {
+        "gulp": "./js/dns.core.js"
+    }
 }
