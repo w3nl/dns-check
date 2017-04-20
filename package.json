@@ -1,6 +1,6 @@
 {
   "name": "dns-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check the dns",
   "files": [
     "js/dns.core.js"
@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Way2WebPieter/dns-check#readme",
   "dependencies": {
     "native-dns": "0.7.0",
-    "commander": "^2.9.0"
+    "vorpal": "1.12.0"
   }
 }

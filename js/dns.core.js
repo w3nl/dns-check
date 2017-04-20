@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
  *  Check the dns.
  *
@@ -8,7 +6,7 @@
  * @return {object}
  */
 var dns = require('dns');
-var program = require('commander');
+var vorpal = require('vorpal')();
 
 var DnsCheck = function(domain) {
     'use strict';
@@ -17,8 +15,6 @@ var DnsCheck = function(domain) {
         if (err) {
             throw err;
         }
-
-        console.log('addresses: ' + JSON.stringify(addresses));
 
         addresses.forEach(function(a) {
             dns.reverse(a, function(err, domains) {
@@ -32,13 +28,13 @@ var DnsCheck = function(domain) {
     });
 };
 
-program
-  .version('0.0.1')
-  .command('<cmd> [domain]')
-  .action(function(cmd, domain) {
-      console.log(cmd, domain);
-
-      new DnsCheck(domain);
+vorpal
+  .command('check [domain]', 'Check the dns.')
+  .action(function(args, callback) {
+      new DnsCheck(args.domain);
+      callback();
   });
 
-program.parse(process.argv);
+vorpal
+  .delimiter('dns$')
+  .show();
