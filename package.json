@@ -6,6 +6,10 @@
     "js/dns.core.js"
   ],
   "main": "js/dns.core.js",
+  "scripts": {
+    "start": "node js/dns.core.js",
+    "build": "npm install"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Way2WebPieter/dns-check.git"
