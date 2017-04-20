@@ -1,0 +1,27 @@
+{
+  "name": "dns-check",
+  "version": "0.0.1",
+  "description": "Check the dns",
+  "files": [
+    "js/dns.core.js"
+  ],
+  "main": "js/dns.core.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Way2WebPieter/dns-check.git"
+  },
+  "keywords": [
+    "dns",
+    "javascript"
+  ],
+  "author": "Pieter Wigboldus",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Way2WebPieter/dns-check/issues"
+  },
+  "homepage": "https://github.com/Way2WebPieter/dns-check#readme",
+  "dependencies": {
+    "native-dns": "0.7.0",
+    "commander": "^2.9.0"
+  }
+}
