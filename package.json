@@ -1,6 +1,6 @@
 {
   "name": "dns-check",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Check the dns",
   "files": [
     "js/dns.core.js"
