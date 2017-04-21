@@ -1,17 +1,16 @@
 {
     "name": "dns-check",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "description": "Check the dns",
     "files": [
-        "js/dns.core.js"
+        "js/dns.core.js",
+        "js/dns.vorpal.js"
     ],
     "main": "js/dns.core.js",
     "scripts": {
         "start": "node js/dns.core.js",
         "build": "npm install",
-        "test": "nyc tap ./js/*.js",
-        "cover": "nyc --reporter=lcov --reporter=text-summary npm start",
-        "coveralls": "nyc --reporter=text-lcov npm start | coveralls"
+        "vorpal": "node js/dns.vorpal.js"
     },
     "repository": {
         "type": "git",
@@ -29,8 +28,7 @@
     "homepage": "https://github.com/Way2WebPieter/dns-check#readme",
     "dependencies": {
         "native-dns": "0.7.0",
-        "vorpal": "1.12.0",
-        "nyc": "10.2.0"
+        "vorpal": "1.12.0"
     },
     "bin": {
         "gulp": "./js/dns.core.js"
